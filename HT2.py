@@ -1,0 +1,8 @@
+print("введите 5-ти значное число")
+x = int(input ('x: '))
+a, c = divmod(x, 1000)
+a, b = divmod(a, 10)
+c, d = divmod(c, 100)
+d, e = divmod(d, 10)
+y = int(e*10000+d*1000+c*100+b*10+a)
+print(y)
